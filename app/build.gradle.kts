@@ -79,4 +79,7 @@ dependencies {
     // Coroutines
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
+
+    // Navigation Compose
+    implementation(libs.androidx.navigation.compose)
 }
