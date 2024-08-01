@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WorldHeritageSites</string>
+    <string name="button_ok">OK</string>
+    <string name="unknown_error_text">Unknown error</string>
 </resources>

@@ -87,4 +87,7 @@ dependencies {
     implementation(libs.moshi)
     implementation(libs.moshi.kotlin)
     ksp(libs.moshi.kotlin.codegen)
+
+    // Coil
+    implementation(libs.coil.compose)
 }
