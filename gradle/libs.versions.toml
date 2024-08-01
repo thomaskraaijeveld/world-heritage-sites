@@ -13,6 +13,7 @@ junitVersion = "1.2.1"
 kotlin = "2.0.0"
 ksp = "2.0.0-1.0.24"
 lifecycleRuntimeKtx = "2.8.4"
+moshi = "1.15.1"
 navigationCompose = "2.7.7"
 timber = "5.0.1"
 versionCatalogUpdate = "0.8.4"
@@ -38,6 +39,9 @@ hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", ve
 junit = { module = "junit:junit", version.ref = "junit" }
 kotlinx-coroutines-android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1"
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
+moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshi" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 
 [plugins]
