@@ -1,4 +1,4 @@
-package com.example.worldheritagesites.ui.theme
+package com.example.worldheritagesites.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
