@@ -38,6 +38,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeCompiler {
         enableStrongSkippingMode = true
@@ -71,4 +72,7 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
     implementation(libs.hilt.navigation.compose)
+
+    // Timber
+    implementation(libs.timber)
 }
