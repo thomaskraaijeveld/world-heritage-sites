@@ -75,4 +75,8 @@ dependencies {
 
     // Timber
     implementation(libs.timber)
+
+    // Coroutines
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
 }
