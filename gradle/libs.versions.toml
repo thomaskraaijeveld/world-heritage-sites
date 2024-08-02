@@ -14,6 +14,8 @@ junitVersion = "1.2.1"
 kotlin = "2.0.0"
 ksp = "2.0.0-1.0.24"
 lifecycleRuntimeKtx = "2.8.4"
+mockito = "5.12.0"
+mockitoKotlin = "5.4.0"
 moshi = "1.15.1"
 navigationCompose = "2.7.7"
 room = "2.6.1"
@@ -45,6 +47,9 @@ hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", ve
 junit = { module = "junit:junit", version.ref = "junit" }
 kotlinx-coroutines-android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1"
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlin" }
 moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
 moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
 moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshi" }
