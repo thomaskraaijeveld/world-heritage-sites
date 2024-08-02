@@ -90,4 +90,9 @@ dependencies {
 
     // Coil
     implementation(libs.coil.compose)
+
+    // Room
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
 }
