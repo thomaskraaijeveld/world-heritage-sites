@@ -27,20 +27,24 @@ class WorldHeritageSitesViewModel @Inject constructor(
             val worldHeritageSites = withContext(Dispatchers.IO) {
                 getWorldHeritageSitesUseCase(searchQuery)
             }
-            _uiState.value = _uiState.value.copy(worldHeritageSites = worldHeritageSites)
+            updateUiState { copy(worldHeritageSites = worldHeritageSites) }
         } catch (exception: Exception) {
             onShowErrorDialog(exception)
         } finally {
-            _uiState.value = _uiState.value.copy(showLoading = false)
+            updateUiState { copy(showLoading = false) }
         }
     }
 
     fun onSearchQueryChanged(searchQuery: String) {
-        _uiState.value = _uiState.value.copy(searchQuery = searchQuery)
+        updateUiState { copy(searchQuery = searchQuery) }
         getWorldHeritageSites(searchQuery)
     }
 
     fun onShowErrorDialog(exception: Exception?) {
-        _uiState.value = _uiState.value.copy(showErrorDialog = exception)
+        updateUiState { copy(showErrorDialog = exception) }
+    }
+
+    private fun updateUiState(update: WorldHeritageSitesUiState.() -> WorldHeritageSitesUiState) {
+        _uiState.value = _uiState.value.update()
     }
 }
