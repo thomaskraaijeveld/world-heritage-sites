@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">WorldHeritageSites</string>
+    <string name="world_heritage_sites_text_field_placeholder">Search world heritage site</string>
+    <string name="world_heritage_sites_empty">No world heritage sites found</string>
     <string name="button_ok">OK</string>
     <string name="unknown_error_text">Unknown error</string>
 </resources>

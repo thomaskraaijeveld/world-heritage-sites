@@ -1,6 +1,7 @@
 package com.example.worldheritagesites.di
 
 import android.content.Context
+import com.example.worldheritagesites.data.database.daos.WorldHeritageSiteDao
 import com.example.worldheritagesites.data.repositories.WorldHeritageSiteRepositoryImpl
 import com.example.worldheritagesites.domain.repositories.WorldHeritageSiteRepository
 import com.squareup.moshi.Moshi
@@ -15,6 +16,6 @@ import javax.inject.Singleton
 object RepositoryModule {
     @Provides
     @Singleton
-    fun provideWorldHeritageSiteRepository(context: Context, moshi: Moshi): WorldHeritageSiteRepository =
-        WorldHeritageSiteRepositoryImpl(context, moshi)
+    fun provideWorldHeritageSiteRepository(context: Context, moshi: Moshi, dao: WorldHeritageSiteDao): WorldHeritageSiteRepository =
+        WorldHeritageSiteRepositoryImpl(context, moshi, dao)
 }

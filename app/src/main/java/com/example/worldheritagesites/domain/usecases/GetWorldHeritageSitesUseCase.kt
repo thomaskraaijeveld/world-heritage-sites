@@ -5,5 +5,6 @@ import com.example.worldheritagesites.domain.repositories.WorldHeritageSiteRepos
 import javax.inject.Inject
 
 class GetWorldHeritageSitesUseCase @Inject constructor(private val worldHeritageSiteRepository: WorldHeritageSiteRepository) {
-    suspend operator fun invoke(): List<WorldHeritageSite> = worldHeritageSiteRepository.getWorldHeritageSites()
+    suspend operator fun invoke(searchQuery: String): List<WorldHeritageSite> =
+        worldHeritageSiteRepository.getWorldHeritageSites(searchQuery)
 }
